@@ -1,0 +1,19 @@
+﻿
+@model Amino.PersonsWeb.Models.ViewPersonViewModel
+
+@{
+    ViewBag.Title = "ShowPerson";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<fieldset>
+    <legend>#@Model.UserId - @Model.Name</legend>
+    
+    <p>@Model.Address</p>
+    <p>@Model.ZipCodeAndCity</p>
+    <br/>
+    <p>@Model.DateOfBirthdayAndAge</p>
+    
+    @Html.ActionLink("Gå tilbage til kartoteket..", "Index")
+</fieldset>

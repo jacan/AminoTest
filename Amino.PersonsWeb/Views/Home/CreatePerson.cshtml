@@ -1,0 +1,60 @@
+﻿@model Amino.PersonsWeb.Models.CreatePersonViewModel
+
+@{
+    ViewBag.Title = "Opret ny person i adressekartotek";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<br/>
+
+@using (Html.BeginForm("CreatePersonPost", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Opret ny person i adressekartotek..</legend>
+
+        <table>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Firstname)</td>
+                <td>@Html.TextBoxFor(x => x.Firstname)</td>
+                <td>@Html.ValidationMessageFor(x => x.Firstname)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Lastname)</td>
+                <td>@Html.TextBoxFor(x => x.Lastname)</td>
+                <td>@Html.ValidationMessageFor(x => x.Lastname)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Address)</td>
+                <td>@Html.TextBoxFor(x => x.Address)</td>
+                <td>@Html.ValidationMessageFor(x => x.Address)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(x => x.SelectZipCode.SelectedZipCode)</td>
+                <td>@Html.DropDownListFor(x => x.SelectZipCode.SelectedZipCode, Model.SelectZipCode.ZipCodes)</td>
+                <td>@Html.ValidationMessageFor(x => x.SelectZipCode)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.DateOfBirth)</td>
+                <td><input type="text" id="DatePickBirthday"  name="DateOfBirth"  /></td>
+                <td>@Html.ValidationMessageFor(x => x.DateOfBirth)</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Opret" /></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+}
+
+@Html.ActionLink("Annuller", "Index")
+
+<script>
+    $(function() {
+        $('#DatePickBirthday').datepicker();
+    });
+</script>

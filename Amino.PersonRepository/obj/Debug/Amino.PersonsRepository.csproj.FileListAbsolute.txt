@@ -1,0 +1,12 @@
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Amino.PersonsRepository.dll.config
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Amino.PersonsRepository.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Amino.PersonsRepository.pdb
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Amino.Domain.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Castle.Core.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\EntityFramework.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Amino.Domain.pdb
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\Castle.Core.xml
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\bin\Debug\EntityFramework.xml
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\obj\Debug\Amino.PersonsRepository.csprojResolveAssemblyReference.cache
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\obj\Debug\Amino.PersonsRepository.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.PersonRepository\obj\Debug\Amino.PersonsRepository.pdb

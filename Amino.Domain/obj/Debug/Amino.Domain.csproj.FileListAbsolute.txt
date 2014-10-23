@@ -1,0 +1,4 @@
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.Domain\bin\Debug\Amino.Domain.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.Domain\bin\Debug\Amino.Domain.pdb
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.Domain\obj\Debug\Amino.Domain.dll
+D:\codebase\Amino\Amino.dep\Amino.Test\Amino.Domain\obj\Debug\Amino.Domain.pdb

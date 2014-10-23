@@ -1,0 +1,29 @@
+﻿@using Amino.PersonsWeb.Models
+@model IEnumerable<PersonsViewModel>
+
+@{
+    ViewBag.Title = "Amino adressekartotek";   
+}
+
+<br/>
+<table style="padding: 10px;">
+    <tr>
+        <th>Id</th>
+        <th style="width: 200px;">Navn</th>
+        <th style="width: 200px;">Adresse</th>
+        <th style="width: 200px;">Postnr/By</th>
+        <th>Fødselsdag</th>
+    </tr>
+
+    @foreach (var personViewModel in Model)
+    {
+        <tr>
+            <td>#@personViewModel.UserId</td>
+            <td>@Html.ActionLink(personViewModel.Fullname.ToString(), "ShowPerson", new { IdOfpersonToShow = personViewModel.Id })</td>
+            <td>@personViewModel.Address</td>
+            <td>@personViewModel.ZipCodeAndCity</td>
+            <td>@personViewModel.Birthdate</td>
+        </tr>
+    }
+
+</table>
